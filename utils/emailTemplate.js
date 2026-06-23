@@ -10,13 +10,7 @@ const emailTemplate = (formData) => {
       return "General Inquiry"
     } else if (type === "admission") {
       return "Admission Inquiry"
-    } else if (type === "Business Enquiry") {
-      return "Business Enquiry"
-    }else if (type === "partnership") {
-      return "partnership Enquiry"
-    }
-
-    else {
+    } else {
       return `${type} Inquiry`
     }
 
