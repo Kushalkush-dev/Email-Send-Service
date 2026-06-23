@@ -3,23 +3,25 @@
 
 const emailTemplate = (formData) => {
 
-    const inquirytypeDisplay =(type)=>{
-    if(type === "feedback"){
-        return "Feedback"
-    } else if(type === "general"){
-        return "General Inquiry"
-    } else if(type === "admission"){
-        return "Admission Inquiry"
-    }else if(type ==="Business Enquiry"){
+  const inquirytypeDisplay = (type) => {
+    if (type === "feedback") {
+      return "Feedback"
+    } else if (type === "general") {
+      return "General Inquiry"
+    } else if (type === "admission") {
+      return "Admission Inquiry"
+    } else if (type === "Business Enquiry") {
       return "Business Enquiry"
-
+    }else if (type === "partnership") {
+      return "partnership Enquiry"
     }
-    else{
+
+    else {
       return `${type} Inquiry`
     }
 
   }
-    return `    
+  return `    
 <body style="margin:0; padding:0; background:#f4f4f8; font-family: 'Segoe UI', Arial, sans-serif;">
 
   <table width="100%" cellpadding="0" cellspacing="0" style="padding:40px 0;">
