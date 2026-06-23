@@ -13,6 +13,8 @@ const emailTemplateSchool = (formData) => {
     }else if(type ==="Business Enquiry"){
       return "Business Enquiry"
 
+    }else if (type === "partnership") {
+      return "partnership Enquiry"
     }
     else{
       return `${type} Inquiry`
