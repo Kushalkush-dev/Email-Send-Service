@@ -30,7 +30,7 @@ app.set('trust proxy', TRUST_PROXY);
 
 const limiter=rateLimit({
     windowMs:5*60*1000,
-    max:5,
+    max:10,
     statusCode:429,
     message:"Too many requests , Please try again later",
     standardHeaders: true, 
